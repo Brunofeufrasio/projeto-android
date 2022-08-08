@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight:normal ;
+}
+
+
+:root {   
+--cor01:#c5ebd6;
+--cor02:#83e1ad;
+--cor03:#3ddc84;
+--cor04:#2fa866;
+--cor05:#1a5c37;
+--cor06:#063d1e;
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: 'Bebas Neue', cursive;
+--fonte-android: 'Android', cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+    padding: 10px;  
+    box-shadow: 0px 7px 9px;
+}
+
+header {
+    font-family: var(--fonte-destaque);
+    background-image:linear-gradient(to bottom, var(--cor04), var(--cor06)) ;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor06);
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -ms-border-radius: 5px 5px 0px 0px;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -o-border-radius: 5px 5px 0px 0px;
+}
+header > h1 {
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    color: white;
+    padding-top: 10px; 
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.74)
+    
+}
+header > p {
+    color: white;
+    
+}
+nav {
+    background-color: var(--cor05);
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.411);
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -ms-border-radius: 0px 0px 5px 5px;
+    -o-border-radius: 0px 0px 5px 5px;
+}
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.7s;
+}
+nav > a:hover{
+    border-radius: 7px;
+    background-color: #3ddc84;
+    color: #063d1e;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+main {
+   background-color: white;
+   min-width: 300px;
+   max-width: 1000;
+   margin: auto;
+   padding: 20px;
+   box-shadow: 0px 0px 10px black ;
+   border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+}
+main p {
+    margin: 15px 0px ;
+    text-align: justify;
+    text-indent:30px ;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong {
+    background-color:#c5ebd6be;
+    color: #063d1e;
+    font-weight: bold;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#6d6e06;
+}
+ main a:hover {
+    text-decoration: underline;
+    color: #1a5c37;
+ }
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+div.video {
+    background-color: #2fa866;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%;
+}
+div.video >iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+main h1 {
+
+    font-family: var(--fonte-android);
+}
+main h2  {
+    font-family: var(--fonte-android);
+    color: #063d1e;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    text-indent: 8px;
+}
+aside {
+    background-color: #3ddc84;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.603);
+}
+aside h3 {
+    background-color: #1a5c37;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    -ms-border-radius: 4px 4px 0px 0px;
+    -o-border-radius: 4px 4px 0px 0px;
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;  
+}
+aside > ul > li {
+    padding: 5px;
+    
+    
+}
+footer {
+    padding: 10px;
+    background-color: var(--cor06);
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -ms-border-radius: 0px 0px 5px 5px;
+    -o-border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    font-size: 12px;
+}
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+footer a:hover {
+    text-decoration: underline;
+    color:#6d6e06
+}
