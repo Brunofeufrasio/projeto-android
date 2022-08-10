@@ -90,7 +90,7 @@ nav > a:hover{
 main {
    background-color: white;
    min-width: 300px;
-   max-width: 1000;
+   max-width: 1000px;
    margin: auto;
    padding: 20px;
    box-shadow: 0px 0px 10px black ;
@@ -123,6 +123,12 @@ main a{
  }
 main img.pequena {
     max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+main img.media {
+    max-width: 100%;
     margin: auto;
     display: block;
 }
